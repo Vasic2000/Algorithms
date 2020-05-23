@@ -1,6 +1,8 @@
 package two_way_list
 
 class Node<E> {
+    var first: Boolean = false
+    var last: Boolean = false
     var element: E? = null
     var next: Node<E>? = null
     var previous: Node<E>? = null
@@ -42,6 +44,15 @@ class Node<E> {
 
     fun isPrevious(): Boolean {
         return previous != null
+    }
+
+    // Геттер и сеттер
+    fun isFirst(): Boolean {
+        return first
+    }
+
+    fun isLast(): Boolean {
+        return last
     }
 }
 
