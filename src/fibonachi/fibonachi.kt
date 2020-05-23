@@ -11,6 +11,7 @@ fun main() {
 private fun readNumber() : Int {
     var flag = true
     var number = 0
+    println("Напишите число для которого считаем Фибоначи")
     while (flag) {
         try {
             number = readLine()!!.toInt()
